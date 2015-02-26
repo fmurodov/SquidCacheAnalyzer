@@ -10,5 +10,5 @@
   s=s+$5
 }
 END {
-print k,s,1*k/s*100
-}
+      print k/1024/1024"mb",s/1024/1024"mb",1*k/s*100"% from cache"
+ }

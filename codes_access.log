@@ -1,0 +1,18 @@
+TCP_HIT         Объект в кеше
+TCP_MISS        Объекта нет в кеше
+TCP_DENIED      Доступ запрещен для этого запроса
+TCP_REFRESH_HIT         Запрошенный объект был в кеше, но устарел. IMS-запрос для этого объекта вернул "304 not modified", т.е. обновления не потребовалось
+TCP_REF_FAIL_HIT        Запрошенный объект был в кеше, но устарел. IMS-запрос завершен неудачно и будет загружен устаревший объект из кеша
+TCP_REFRESH_MISS        Запрошенный объект был в кеше, но устарел. IMS-запрос загрузил в кеш обновленный объект
+TCP_CLIENT_REFRESH_MISS         The client issued a "no-cache" pragma, or some analogous cache control command along with the request. Thus, the cache has to refetch the object
+TCP_IMS_HIT     Клиент использовал IMS-запрос для объекта, который был найден в кеше
+TCP_SWAPFAIL_MISS       Объект в кеше, но доступа к нему нет
+TCP_NEGATIVE_HIT        Запрос для негативно кешированных объектов типа "404 not found", for which the cache believes to know that it is inaccessible. Also refer to the explainatio ns for negative_ttl in your squid.conf file
+TCP_MEM_HIT     Объект был взят из оперативной памяти
+TCP_OFFLINE_HIT         The requested object was retrieved from the cache during offline mode. The offline mode never validates any object, см. offline_mode в файле squid.conf
+UDP_HIT Объект в кеше
+UDP_MISS  Объекта нет в кеше
+UDP_DENIED      Доступ запрещен для этого запроса
+UDP_INVALID     Неверный запрос
+UDP_MISS_NOFETCH        During "-Y" startup, or during frequent failures, a cache in hit only mode will return either UDP_HIT or this code. Neighbours will thus only fetch hits
+NONE    Seen with errors and cachemgr requests 

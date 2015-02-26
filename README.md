@@ -2,7 +2,7 @@
 Squid traffic economy analyzer on awk
 
 Usage
-./scr.awk $LOG_FILE
+./scr.awk $SQUID_ACCESS_LOG
 
 Example output:
 

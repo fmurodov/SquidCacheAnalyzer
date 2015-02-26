@@ -1,0 +1,1 @@
+{"name":"Squidcacheanalyzer","tagline":"Squid traffic economy analyzer","body":"# SquidCacheAnalyzer\r\nSquid traffic economy analyzer on awk\r\n\r\nUsage\r\n`./scr.awk $SQUID_ACCESS_LOG`\r\n\r\nExample output:\r\n\r\n2.8699mb 34.7098mb 8.26827% from cache\r\n\r\n\r\n","google":"","note":"Don't delete this file! It's used internally to help with page regeneration."}
